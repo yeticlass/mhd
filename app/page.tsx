@@ -123,7 +123,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-10 text-center px-6">
-        <h4 className="text-2xl font-bold mb-2">Miteri False Ceiling</h4>
+        <h4 className="text-2xl font-bold mb-2">Miteri Home Decor</h4>
         <p className="text-gray-400 mb-4">The name you trust</p>
         <p className="text-gray-500 text-sm">
           Serving Kathmandu with quality false ceiling solutions for over 10
