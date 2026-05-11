@@ -1,3 +1,10 @@
+import * as React from "react"
+
+import Link from "next/link"
+
+
+
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-gray-800">
@@ -43,13 +50,26 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
+       <nav className="flex gap-6">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <Link href="#services">
+            <button className="
+            bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
+              
               View Services
             </button>
-
-            <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition duration-300">
+            </Link>
+           <Link href="/contact-us">
+            <button className="
+            border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition duration-300
+            cursor-pointer
+            ">
               Contact Us
             </button>
+            </Link>
+          </div>
+    </nav>
+           
           </div>
         </div>
       </section>
@@ -95,10 +115,12 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-6 md:px-16">
+      <section id="services" className="py-20 px-6 md:px-16">
+       
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-3xl font-bold mb-12">Our Services</h3>
-
+          
+          <h3 className="text-3xl font-bold mb-12"> Our Services</h3>
+        
           <div className="grid md:grid-cols-3 gap-8">
             {[
               'Gypsum Ceiling',
@@ -115,10 +137,13 @@ export default function HomePage() {
                   Stylish and durable ceiling solutions designed for modern
                   interiors.
                 </p>
+               
               </div>
+              
             ))}
           </div>
         </div>
+          
       </section>
 
       {/* Footer */}
