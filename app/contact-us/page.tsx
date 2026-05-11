@@ -8,7 +8,7 @@ export default function ContactSection() {
             <nav className="w-full flex items-center justify-between px-8 py-5 shadow-sm bg-white sticky top-0 z-50">
         <div className="flex">
             <Link href="/">
-          <img src='/images/logo.jpg' alt="Miteri Logo"  className=" rounded-lg h-15 w-15"/>
+          <img src='/images/logo.jpg' alt="Miteri Logo"  className=" rounded-lg" width={100} height={100} />
           </Link>
           <div className="flex flex-col">
 
