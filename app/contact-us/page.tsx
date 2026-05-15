@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function ContactSection() {
   return (
     
@@ -43,7 +44,7 @@ export default function ContactSection() {
               </h3>
 
               <p>
-                Sukedhara-4, <br />
+                Imadol-10, <br />
                 Kathmandu, Nepal
               </p>
             </div>
@@ -53,7 +54,7 @@ export default function ContactSection() {
                 Phone:
               </h3>
 
-              <p>+977-9749404181</p>
+              <p>9863994561, 9749404181 </p>
             </div>
 
             <div>

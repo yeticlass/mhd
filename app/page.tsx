@@ -1,12 +1,16 @@
+'use client'
 import * as React from "react"
 
 import Link from "next/link"
-
+import MHDCarousel from "./components/mhd-carousel"
 
 
 
 export default function HomePage() {
+
+
   return (
+    <>
     <main className="min-h-screen bg-white text-gray-800">
       {/* Navbar */}
       <nav className="w-full flex items-center justify-between px-8 py-5 shadow-sm bg-white sticky top-0 z-50">
@@ -28,6 +32,14 @@ export default function HomePage() {
           <li className="hover:text-gray-500 cursor-pointer">Contact</li>
         </ul>
       </nav>
+
+
+      {/* Carousel Section*/}
+
+      <section>
+       <MHDCarousel />
+         
+      </section>
 
       {/* Hero Section */}
       <section
@@ -146,6 +158,13 @@ export default function HomePage() {
           
       </section>
 
+   {/* Call Widget */}
+   <section>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div className="elfsight-app-bf7de9ad-c7ca-432a-92c0-4c2f48dae36d" data-elfsight-app-lazy></div>
+   </section>
+
       {/* Footer */}
       <footer className="bg-black text-white py-10 text-center px-6">
         <h4 className="text-2xl font-bold mb-2">Miteri Home Decor</h4>
@@ -156,5 +175,7 @@ export default function HomePage() {
         </p>
       </footer>
     </main>
+  
+    </>
   );
 }
