@@ -36,7 +36,8 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+      data-scroll-behavior="smooth">
+    
       
       <body className="flex flex-col mx-auto max-w-7.5xl px-5 mt-2">    
         <div>
