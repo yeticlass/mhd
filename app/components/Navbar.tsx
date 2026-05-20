@@ -43,13 +43,15 @@ export default function Navbar() {
     <>
       <nav className={styles.nav}>
         {/* Logo */}<div className="flex">
+            
           <img src='/images/logo.jpg' alt="Miteri Logo"  className=" rounded-lg h-15"/>
+            
           <div className="flex flex-col">
 
-          <h1 className="text-2xl font-bold tracking-wide pl-5">
+          <h1 className="font-bold ml-4 text-3xl">
             Miteri Home Decor
           </h1>
-          <p className="text-sm text-gray-700 pl-5">The name you trust</p>
+          <p className="ml-4 text-gray-600 pb-2">The name you trust</p>
         </div>
         </div>
 
