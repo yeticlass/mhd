@@ -36,14 +36,14 @@ export default function PhotoGallery() {
             className="relative aspect-video cursor-pointer overflow-hidden rounded"
             onClick={() => setSelected(photo)}
           >
-            <Image
-              src={photo.src}
-              alt={photo.alt}
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-300"
-             sizes="100vw"
-             priority
-            />
+        <Image
+  src={photo.src}
+  alt={photo.alt}
+  fill
+  sizes="(max-width: 768px) 50vw, 33vw"
+  priority={i === 0}
+  className="object-cover hover:scale-105 transition-transform duration-300"
+/>
           </div>
         ))}
       </div>
