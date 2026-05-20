@@ -96,13 +96,12 @@ export default function PhotoGallery() {
             onClick={() => setSelected(photo)}
           >
             <Image
-              src={photo.src}
-              alt={photo.alt}
-              fill
-              sizes={photo.sizes}
-              loading={i === 0 ? "eager" : "lazy"} 
-              className="object-cover hover:scale-105 transition-transform duration-300"
-            />
+  src={photo.src}  // or however your carousel maps images
+  alt={photo.alt}
+  fill
+  sizes="100vw"
+  priority={i === 0}  // 👈 Add this
+/>
           </div>
         ))}
       </div>
