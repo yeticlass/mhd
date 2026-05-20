@@ -99,6 +99,8 @@ export default function PhotoGallery() {
               src={photo.src}
               alt={photo.alt}
               fill
+              sizes={photo.sizes}
+              loading={i === 0 ? "eager" : "lazy"} 
               className="object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
