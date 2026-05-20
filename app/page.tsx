@@ -14,31 +14,13 @@ export default function HomePage() {
     <>
     <div>
     <main className="min-h-screen bg-white text-gray-800 ">
-      {/* Navbar */}
-      <nav className="w-full flex items-center justify-between px-8 py-5 shadow-sm bg-white sticky top-0 z-50">
-        <div className="flex">
-          <img src='/images/logo.jpg' alt="Miteri Logo"  className=" rounded-lg h-15"/>
-          <div className="flex flex-col">
 
-          <h1 className="text-2xl font-bold tracking-wide pl-5">
-            Miteri Home Decor
-          </h1>
-          <p className="text-sm text-gray-500 pl-5">The name you trust</p>
-        </div>
-        </div>
-
-        <ul className="hidden md:flex gap-8 font-medium">
-          <li className="hover:text-gray-500 cursor-pointer">Home</li>
-          <li className="hover:text-gray-500 cursor-pointer">Services</li>
-          <li className="hover:text-gray-500 cursor-pointer">Projects</li>
-          <li className="hover:text-gray-500 cursor-pointer">Contact</li>
-        </ul>
-      </nav>
-
+     {/* Menu Responsiveness */}
+     
 
       {/* Carousel Section */}
 
-        <section className="mt-4">
+        <section className="mt-6">
        <MHDCarousel />
          </section>
 
@@ -185,7 +167,7 @@ export default function HomePage() {
         </p>
       </footer>
      {/* Social Links */}
-      <div className="flex justify-start mt-1 mb-2 py-2 ml-34">
+      <div className="flex justify-start mt-1 mb-2 py-2 ml-4">
       <SocialLinks/>
       </div>
 

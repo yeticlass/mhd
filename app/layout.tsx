@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Cormorant_Garamond, Jost } from "next/font/google";
+import Navbar from "./components/Navbar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +37,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      
       <body className="min-h-full flex flex-col mx-auto max-w-7.5xl px-10">
-        <div className="bg-[url('/images/bck.jpg')] h-full w-fit object-cover bg-no-repeat">
+        <Navbar/>
+        <div>
+        
         {children}
         </div>
         </body>

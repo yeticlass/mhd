@@ -1,0 +1,208 @@
+/* ── Variables ── */
+.nav {
+  --nav-bg: #ffffff;
+  --nav-text: #000000;
+  --nav-accent: #c9a96e;
+  --nav-muted: rgba(0, 0, 0, 0.5);
+  --nav-border: rgba(201, 169, 110, 0.2);
+}
+
+/* ── Nav bar ── */
+.nav {
+  background: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--nav-border);
+  font-family: "Jost", sans-serif;
+}
+
+/* ── Logo ── */
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--nav-text);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo span {
+  display: block;
+  font-family: "Jost", sans-serif;
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--nav-accent);
+  margin-top: 2px;
+}
+
+/* ── Desktop nav links ── */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navLinks a {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--nav-accent);
+  transition: width 0.3s ease;
+}
+.navLinks a:hover {
+  color: var(--nav-text);
+}
+.navLinks a:hover::after {
+  width: 100%;
+}
+.navLinks .active a,
+.navLinks .active a::after {
+  color: var(--nav-text);
+  width: 100%;
+}
+
+/* ── Hamburger button ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--nav-text);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* X state */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ── Mobile / Tablet dropdown ── */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #080808;
+  border-bottom: 1px solid var(--nav-border);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.3s ease;
+  font-family: "Jost", sans-serif;
+}
+.mobileMenu.open {
+  max-height: 320px;
+  padding: 0.5rem 0 1rem;
+}
+.mobileMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobileMenu ul li {
+  border-bottom: 1px solid var(--nav-border);
+}
+.mobileMenu ul li:last-child {
+  border-bottom: none;
+}
+.mobileMenu ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s, padding-left 0.25s;
+}
+.mobileMenu ul li a:hover {
+  color: var(--nav-text);
+  background: rgba(201, 169, 110, 0.06);
+  padding-left: 2.5rem;
+}
+.mobileMenu ul li.active a {
+  color: var(--nav-accent);
+}
+
+/* ── Responsive breakpoints ── */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  .logo {
+    font-size: 17px;
+  }
+  .nav {
+    padding: 0 1.25rem;
+  }
+}
+
+
+
+/* ── Fix: override global styles on mobile links ── */
+.mobileMenu ul li a {
+  color: rgba(245, 240, 232, 0.5) !important;
+}
+
+.mobileMenu ul li a:hover {
+  color: #f5f0e8 !important;
+  background: rgba(201, 169, 110, 0.06) !important;
+  padding-left: 2.5rem !important;
+}
+
+.mobileMenu ul li.active a {
+  color: #c9a96e !important;
+}
