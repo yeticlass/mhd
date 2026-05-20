@@ -172,7 +172,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="flex w-full items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-amber-700 active:scale-95 transition-all duration-200"
           >
-            Get a Free Quote
+            Book Today !
           </Link>
         </div>
       </div>
