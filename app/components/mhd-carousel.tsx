@@ -26,6 +26,8 @@ export default function MHDCarousel() {
               width={400}
               height={300}
               className="rounded-lg object-cover w-full h-64"
+               sizes="100vw"
+               priority 
             />
           </CarouselItem>
         ))}
