@@ -47,7 +47,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.name}
-          className={`text-gray-400 transition-colors duration-200 ${social.color}`}
+          className={`text-gray-600 transition-colors duration-200 ${social.color}`}
         >
           <social.icon />
         </a>

@@ -12,7 +12,8 @@ export default function HomePage() {
 
   return (
     <>
-    <main className="min-h-screen bg-white text-gray-800">
+    <div>
+    <main className="min-h-screen bg-white text-gray-800 ">
       {/* Navbar */}
       <nav className="w-full flex items-center justify-between px-8 py-5 shadow-sm bg-white sticky top-0 z-50">
         <div className="flex">
@@ -35,55 +36,7 @@ export default function HomePage() {
       </nav>
 
 
-      {/* Carousel Section*/}
-
-   
-      {/* Hero Section */}
-      <section
-        className="relative h-[85vh] bg-cover bg-center flex items-center justify-center"
-        style={{
-          backgroundImage:
-            "url('/images/hero.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/30" />
-
-        <div className="relative z-10 text-center px-6 max-w-3xl text-white">
-          <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Premium False Ceiling Services in Kathmandu
-          </h2>
-
-          <p className="text-lg md:text-xl text-gray-200 mb-6">
-            Transforming homes and offices with modern false ceiling designs
-            for over 10 years.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-       <nav className="flex gap-6">
-  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-    <Link href="#services">
-            <button className="
-            bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
-              
-              View Services
-            </button>
-            </Link>
-           <Link href="/contact-us">
-            <button className="
-            border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition duration-300
-            cursor-pointer
-            ">
-              Contact Us
-            </button>
-            </Link>
-          </div>
-    </nav>
-           
-          </div>
-        </div>
-      </section>
-
-     {/* Carousel Section */}
+      {/* Carousel Section */}
 
         <section className="mt-4">
        <MHDCarousel />
@@ -132,6 +85,54 @@ export default function HomePage() {
         </div>
       </section>
 
+
+   
+      {/* Hero Section */}
+      <section
+        className="relative h-[85vh] bg-cover bg-center flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('/images/hero.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/20" />
+
+        <div className="relative z-10 text-center px-6 max-w-3xl text-white">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Premium False Ceiling Services in Kathmandu
+          </h2>
+
+          <p className="text-lg md:text-xl text-gray-200 mb-6">
+            Transforming homes and offices with modern false ceiling designs
+            for over 10 years.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+       <nav className="flex gap-6">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <Link href="#services">
+            <button className="
+            bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300">
+              
+              View Services
+            </button>
+            </Link>
+           <Link href="/contact-us">
+            <button className="
+            border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition duration-300
+            cursor-pointer
+            ">
+              Contact Us
+            </button>
+            </Link>
+          </div>
+    </nav>
+           
+          </div>
+        </div>
+      </section>
+
+     
       {/* Services */}
       <section id="services" className="py-20 px-6 md:px-16">
        
@@ -171,6 +172,9 @@ export default function HomePage() {
 <div className="elfsight-app-bf7de9ad-c7ca-432a-92c0-4c2f48dae36d" data-elfsight-app-lazy></div>
    </section>
 
+
+  
+
       {/* Footer */}
       <footer className="bg-black text-white py-10 text-center px-6">
         <h4 className="text-2xl font-bold mb-2">Miteri Home Decor</h4>
@@ -180,14 +184,14 @@ export default function HomePage() {
           years.
         </p>
       </footer>
-{/* Social Links */}
-<div className="flex justify-startv mt-2">
-<SocialLinks/>
-</div>
+     {/* Social Links */}
+      <div className="flex justify-start mt-1 mb-2 py-2 ml-34">
+      <SocialLinks/>
+      </div>
 
 
     </main>
-  
+  </div>
     </>
   );
 }
