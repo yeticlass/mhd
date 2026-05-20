@@ -6,9 +6,9 @@ import Logo from "./Logo";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery" },
+  { label: "Projects", href: "/gallery" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/contact-us" },
 ];
  
 export default function Navbar() {
@@ -79,7 +79,7 @@ export default function Navbar() {
             {/* Desktop CTA */}
             <div className="hidden md:block">
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="
                 inline-flex items-center
                  gap-2 rounded-lg bg-amber-600
