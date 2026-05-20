@@ -46,7 +46,7 @@ export default function HomePage() {
             "url('/images/hero.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 text-center px-6 max-w-3xl text-white">
           <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -181,7 +181,7 @@ export default function HomePage() {
         </p>
       </footer>
 {/* Social Links */}
-<div className="flex justify-end mt-2">
+<div className="flex justify-startv mt-2">
 <SocialLinks/>
 </div>
 
