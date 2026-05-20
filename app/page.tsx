@@ -1,5 +1,6 @@
 'use client'
 import * as React from "react"
+import SocialLinks from "./components/SocialLinks"
 
 import Link from "next/link"
 import MHDCarousel from "./components/mhd-carousel"
@@ -36,11 +37,7 @@ export default function HomePage() {
 
       {/* Carousel Section*/}
 
-      <section>
-       <MHDCarousel />
-         
-      </section>
-
+   
       {/* Hero Section */}
       <section
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center"
@@ -49,7 +46,7 @@ export default function HomePage() {
             "url('/images/hero.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 text-center px-6 max-w-3xl text-white">
           <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -85,6 +82,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+     {/* Carousel Section */}
+
+        <section className="mt-4">
+       <MHDCarousel />
+         </section>
+
+
+
 
       {/* About Section */}
       <section className="py-20 px-6 md:px-16 bg-gray-50">
@@ -174,6 +180,12 @@ export default function HomePage() {
           years.
         </p>
       </footer>
+{/* Social Links */}
+<div className="flex justify-end mt-2">
+<SocialLinks/>
+</div>
+
+
     </main>
   
     </>
