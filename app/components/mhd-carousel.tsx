@@ -18,6 +18,7 @@ export default function MHDCarousel() {
       }}
     >
       <CarouselContent>
+        
         {images.map((num) => (
           <CarouselItem key={num} className="md:basis-1/2 lg:basis-1/3">
             <Image
@@ -25,7 +26,7 @@ export default function MHDCarousel() {
               alt={`Product image ${num}`}
               width={400}
               height={300}
-              className="rounded-lg object-cover w-full h-64"
+              className="rounded-lg object-cover w-full h-64 overflow-hidden"
               
             />
           </CarouselItem>

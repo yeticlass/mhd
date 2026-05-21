@@ -1,10 +1,10 @@
 import Link from "next/link";
-
+import SocialLinks from "../components/SocialLinks";
 
 export default function ContactSection() {
   return (
     
-    <section className="bg-gray-100 px-6">
+    <section className="px-6 mb-35">
         
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 mt-10">
 
@@ -99,8 +99,14 @@ export default function ContactSection() {
 
           </form>
         </div>
+       
+        
 
-      </div>
+      </div>   <div className="flex justify-start mt-15 mb-22 py-2 ml-5 lg:ml-94">
+              <SocialLinks/>
+              </div>
+        
     </section>
+  
   );
 }
