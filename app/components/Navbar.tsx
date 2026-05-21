@@ -168,7 +168,7 @@ export default function Navbar() {
         {/* Mobile CTA */}
         <div className="px-4 py-4 border-t border-gray-100">
           <Link
-            href="/contact"
+            href="/contact-us"
             onClick={() => setMenuOpen(false)}
             className="flex w-full items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-amber-700 active:scale-95 transition-all duration-200"
           >
