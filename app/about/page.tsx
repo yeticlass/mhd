@@ -7,24 +7,24 @@ const AboutUs = () => {
           About Us
         </h1>
 
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-          Welcome to <span className="font-semibold">Miteri Home Decor</span> -
-          where creativity, comfort, and craftsmanship come together to
-          transform houses into homes.
-        </p>
+       <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+   Welcome to <span className="font-semibold">Miteri False Ceiling</span>  -   your trusted false ceiling service provider in Kathmandu and nearby
+  districts, delivering modern ceiling designs with quality craftsmanship
+  and professional finishing.
+</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-10">
         <div className="bg-white rounded-2xl shadow-sm border p-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            Our Story
+               Our Service
           </h2>
 
           <p className="text-gray-600 leading-relaxed">
-            At Miteri Home Decor, we believe every space tells a story. Our
-            mission is to bring warmth, style, and personality into your home
-            through thoughtfully selected décor pieces inspired by modern
-            living, timeless aesthetics, and artistic design.
+           Whether you are building a new space, renovating your interior, or
+      upgrading your ceiling design, we provide customized solutions with
+      clean finishing, modern designs, and reliable workmanship tailored
+      to your needs.
           </p>
 
           <p className="text-gray-600 leading-relaxed mt-4">
@@ -40,16 +40,16 @@ const AboutUs = () => {
           </h2>
 
           <p className="text-gray-600 leading-relaxed">
-            Our vision is to create a destination where beautiful décor meets
-            affordability and quality. We want every customer to feel connected
-            to their living space through products that reflect comfort,
-            creativity, and individuality.
+             Our vision is to become a trusted name for false ceiling services in
+      Kathmandu by delivering high-quality work, creative ceiling designs,
+      and excellent customer satisfaction. We aim to enhance every space
+      with ceilings that combine beauty, durability, and functionality.
           </p>
         </div>
       </div>
 
       <div className="mt-10 bg-white rounded-2xl shadow-sm border p-8">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-6">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
           Why Choose Us
         </h2>
 
