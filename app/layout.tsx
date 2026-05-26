@@ -39,8 +39,8 @@ export default function RootLayout({
       data-scroll-behavior="smooth">
     
       
-      <body className="min-h-screen overflwo-x-hidden flex flex-col mx-auto max-w-7.5xl px-5 mt-2">    
-        <div>
+      <body className="min-h-screen flex flex-col mx-auto max-w-8xl mt-2 pl-2 ">    
+        <div className="">
         <Navbar/>
         {children}
         </div>

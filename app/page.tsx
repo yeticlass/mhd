@@ -4,6 +4,7 @@ import SocialLinks from "./components/SocialLinks"
 
 import Link from "next/link"
 import MHDCarousel from "./components/mhd-carousel"
+import ClickToCallWidget from "./components/ClickToCall"
 
 
 
@@ -19,7 +20,7 @@ export default function HomePage() {
 
       {/* Carousel Section */}
       <div className="shadow-sm">
-        <section className="mt-6">
+        <section className="mt-6 overflow-hidden">
        <MHDCarousel />
          </section>
       </div>
@@ -70,6 +71,7 @@ export default function HomePage() {
 
    
       {/* Hero Section */}
+      <div className="px-4">
       <section
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center"
         style={{
@@ -113,6 +115,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </div>
 
      
       {/* Services */}
@@ -147,14 +150,6 @@ export default function HomePage() {
           
       </section>
 
-   {/* Call Widget */}
-   <section>
-
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div className="elfsight-app-bf7de9ad-c7ca-432a-92c0-4c2f48dae36d" data-elfsight-app-lazy></div>
-   </section>
-
-
   
 
       {/* Footer */}
@@ -167,11 +162,14 @@ export default function HomePage() {
         </p>
       </footer>
      {/* Social Links */}
-      <div className="flex justify-start mt-1 mb-2 py-2 ml-4">
+   
+
+       <div className="">
+      <ClickToCallWidget/>
+      </div>
+         <div className="flex justify-start mt-1 mb-2 py-2 ml-4">
       <SocialLinks/>
       </div>
-
-
     </main>
   </div>
     </>

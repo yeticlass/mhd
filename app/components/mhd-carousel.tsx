@@ -11,6 +11,7 @@ export default function MHDCarousel() {
   const images = [1, 2, 3, 4, 5, 6, 7]
 
   return (
+     <div className="relative w-full px-2"> 
     <Carousel
       opts={{
         align: "start",
@@ -32,8 +33,9 @@ export default function MHDCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="left-1 bg-slate-700/30"/>
+      <CarouselNext className="right-3 bg-slate-700/30"/>
     </Carousel>
+    </div>
   )
 }
