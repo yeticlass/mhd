@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://miterihomedecor.com/sitemap.xml',
+    sitemap: 'https://www.miterihomedecor.com/sitemap.xml',
   }
 }
