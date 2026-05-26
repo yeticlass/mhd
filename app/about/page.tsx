@@ -8,7 +8,7 @@ const AboutUs = () => {
         </h1>
 
        <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-   Welcome to <span className="font-semibold">Miteri False Ceiling</span>  -   your trusted false ceiling service provider in Kathmandu and nearby
+   Welcome to <span className="font-semibold">Miteri Home Decor</span>  -   your trusted false ceiling service provider in Kathmandu and nearby
   districts, delivering modern ceiling designs with quality craftsmanship
   and professional finishing.
 </p>
