@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 
 
@@ -43,6 +44,9 @@ export default function RootLayout({
         <div className="">
         <Navbar/>
         {children}
+        <div className="lg:ml-80">
+         <WhatsAppWidget />
+         </div>
         </div>
         </body>
         

@@ -4,9 +4,9 @@ import ClickToCall from "../components/ClickToCall";
 export default function ContactSection() {
   return (
     
-    <section className="px-6 mb-35">
+    <section className="px-6 mb-15">
         
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 mt-20">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 mt-1 sm:mt-7">
 
         {/* LEFT GRID */}
         <div className="bg-white p-8 rounded-2xl shadow-md">
@@ -103,12 +103,13 @@ export default function ContactSection() {
         
 
       </div>   
-      <div className="flex justify-start mt-7 mb-5 py-2 ml-5 lg:ml-90">
+           
+                
+        <ClickToCall/>
+      
+      <div className="flex justify-start mt-7 mb-15 py-2 lg:ml-350">
               <SocialLinks/>
               </div>
-              <div>
-        <ClickToCall/>
-        </div>
     </section>
   
   );

@@ -167,7 +167,7 @@ export default function HomePage() {
        <div className="">
       <ClickToCallWidget/>
       </div>
-         <div className="flex justify-start mt-1 mb-2 py-2 ml-4">
+         <div className="flex justify-start mt-1 mb-2 py-2 ml-14">
       <SocialLinks/>
       </div>
     </main>

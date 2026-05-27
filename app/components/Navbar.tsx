@@ -145,7 +145,7 @@ export default function Navbar() {
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
-        className={`fixed top-16 inset-x-0 z-50 md:hidden bg-white border-t border-gray-100 shadow-xl transition-all duration-300 ease-in-out ${
+        className={`fixed  mx-4 top-15 inset-x-0 z-50 md:hidden bg-black/80 border-t border-gray-100 shadow-xl transition-all duration-300 ease-in-out ${
           menuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-2 pointer-events-none"
@@ -157,7 +157,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-3 py-3.5 text-base font-medium text-gray-800 hover:text-amber-600 transition-colors duration-150"
+                className="flex items-center gap-3 py-3.5 text-base font-medium text-white font-bold hover:text-amber-600 transition-colors duration-150"
               >
                 {link.label}
               </Link>

@@ -2,72 +2,69 @@ export default function GalleryPage() {
   const images = [
     {
       src: "images/gallery/1.jpg",
-      alt: "Modern living room interior",
+      alt: "False ceiling services in Kathmandu",
     },
     {
       src: "images/gallery/2.jpg",
-      alt: "Luxury sofa decor",
+      alt: "False ceiling services in Kathmandu",
     },
-    {
-      src: "image/gallery/63.jpg",
-      alt: "Elegant curtain setup",
-    },
+    
     {
       src: "images/gallery/40.jpg",
-      alt: "Minimal bedroom styling",
+      alt: "False ceiling services in Kathmandu",
     },
     {
       src: "images/gallery/5.jpg",
-      alt: "Wooden dining decor",
+      alt: "False ceiling services in Kathmandu",
     },
     {
       src: "images/gallery/6.jpg",
-      alt: "Decorative wall setup",
+      alt: "False ceiling services in Kathmandu",
     },
     {
       src: "images/gallery/7.jpg",
-      alt: "Home furnishing showcase",
+      alt: "False ceiling services in Kathmandu",
     },
     {
       src: "images/gallery/8.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
         {
       src: "images/gallery/24.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
         {
       src: "images/gallery/10.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
         {
       src: "images/gallery/11.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
     
         {
       src: "images/gallery/61.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
     
         {
       src: "images/gallery/13.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
     
         {
       src: "images/gallery/14.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
     
         {
       src: "images/gallery/15.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
     
         {
       src: "images/gallery/16.jpg",
-      alt: "Stylish interior arrangement",
+      alt: "False ceiling services in Kathmandu",
     },
   ];
 
