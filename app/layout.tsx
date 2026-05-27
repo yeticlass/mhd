@@ -44,9 +44,9 @@ export default function RootLayout({
         <div className="">
         <Navbar/>
         {children}
-        <div className="lg:ml-80">
+        
          <WhatsAppWidget />
-         </div>
+      
         </div>
         </body>
         

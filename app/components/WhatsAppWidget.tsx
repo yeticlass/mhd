@@ -50,9 +50,11 @@ export default function WhatsAppWidget() {
           width:30px; height: 30px;
           border-radius: 50%;
           background: linear-gradient(145deg, #25d366, #128c5e);
+            // background: #000; 
           border: none; cursor: pointer;
           display: flex; align-items: center; justify-content: center;
           box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+          // box-shadow: 0 6px 20px rgba(0,0,0,0.35);
           transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .wa-fab:hover {
@@ -118,7 +120,7 @@ export default function WhatsAppWidget() {
 
         /* Close X on header */
         .wa-close-btn {
-          margin-left: auto; background: none; border: none;
+          background: none; border: none;
           color: rgba(255,255,255,0.7); font-size: 20px;
           cursor: pointer; line-height: 1; padding: 2px 4px;
           transition: color 0.15s;
@@ -128,14 +130,14 @@ export default function WhatsAppWidget() {
 
       {/* Fixed container — bottom-right */}
       <div
-        className="wa-widget  lg:mb-9"
+        className="wa-widget  lg:mb-9 lg:ml-1"
         style={{
           position: "fixed",
           bottom: "2px",
           left: "22px",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
+          alignItems: "flex-start",
           gap: "14px",
           zIndex: 9999,
         }}
@@ -153,9 +155,10 @@ export default function WhatsAppWidget() {
                 <div className="wa-card-name">Support</div>
                 <div className="wa-card-status">● Typically replies instantly</div>
               </div>
-              <button className="wa-close-btn" onClick={() => setOpen(false)} aria-label="Close">
-                ×
+               <button className="wa-close-btn" onClick={() => setOpen(false)} aria-label="Close">
+                <span className="ml-5 text-2xl text-white">×</span>
               </button>
+              
             </div>
 
             {/* Body — sample message */}

@@ -145,7 +145,7 @@ export default function Navbar() {
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
-        className={`fixed  mx-4 top-15 inset-x-0 z-50 md:hidden bg-black/80 border-t border-gray-100 shadow-xl transition-all duration-300 ease-in-out ${
+        className={`fixed  mx-4 top-17 inset-x-0 z-50 md:hidden bg-black/70 border-t border-gray-100 shadow-xl transition-all duration-300 ease-in-out ${
           menuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-2 pointer-events-none"
