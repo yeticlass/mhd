@@ -133,8 +133,8 @@ export default function WhatsAppWidget() {
         className="wa-widget  lg:mb-9 lg:ml-1"
         style={{
           position: "fixed",
-          bottom: "2px",
-          left: "22px",
+          bottom: "34px",
+          left: "24px",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",

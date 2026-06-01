@@ -6,6 +6,9 @@ import Link from "next/link"
 import MHDCarousel from "./components/mhd-carousel"
 import ClickToCallWidget from "./components/ClickToCall"
 
+import HeroBanner from "./components/HeroBanner"
+
+
 
 
 export default function HomePage() {
@@ -17,6 +20,14 @@ export default function HomePage() {
     <main className="min-h-screen bg-white text-gray-800 ">
 
      
+
+      {/* Banner Section */}
+       <section>
+        <div>
+          <HeroBanner/>
+        </div>
+       </section>
+
 
       {/* Carousel Section */}
       <div className="shadow-sm">
@@ -68,7 +79,7 @@ export default function HomePage() {
         </div>
       </section>
 
-
+    
    
       {/* Hero Section */}
       <div className="px-4">
@@ -128,7 +139,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               'Gypsum Ceiling',
-              'POP Designs',
+              'PVC Designs',
               'Office Ceiling Solutions',
             ].map((service) => (
               <div

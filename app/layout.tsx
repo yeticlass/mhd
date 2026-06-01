@@ -45,7 +45,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         
-         <WhatsAppWidget />
+         {/* <WhatsAppWidget /> */}
       
         </div>
         </body>
