@@ -10,7 +10,7 @@ const Services = () => {
           <div className="flex flex-col">
             {[
               'Gypsum Ceiling',
-              'POP Designs',
+              'PVC Designs',
               'Office Ceiling Solutions',
             ].map((service) => (
               <div

@@ -107,7 +107,7 @@ export default function ContactSection() {
                 
         <ClickToCall/>
       
-      <div className="flex justify-start mt-7 mb-15 py-2 lg:ml-450">
+      <div className="flex justify-start mt-7 mb-15 py-2 lg:ml-90">
               <SocialLinks/>
               </div>
     </section>
